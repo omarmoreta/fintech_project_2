@@ -5,8 +5,19 @@
 > This group project focuses on various aspects machine learning in the financial market. Each group member will examine a different ML aspect and/or paramter for a given issue(s).
 ***
 # Eli - sentiment based analysis
-* add here 
-* add here
+Summary:
+* Backstory into why I focus on sentiment so much
+* Walkthrough of how sentiment in the news can impact investment decision making
+* We'll talk about how you can use this information to train models for future use
+
+Results:
+* There are some significant flags from the fluctuations in price over 3 days
+* We're able to see how the TextBlob mechanism may not accurately label new articles
+
+Improvements:
+* There's plenty of opportunity to help train the model on results classified manually as positive/negative sentiment
+* Ensuring that articles align with the correct stock
+* Expanding on the impact from the sentiment/news on investments
 
 # Mike - Machine learning with a fcous on regression for price prediction.
 Summary:
