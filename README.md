@@ -11,14 +11,48 @@
 * Time permitting a quick live demo
 
 # Mike - Machine learning with a fcous on regression for price prediction.
+Summary:
 * A case study using TSCO as underlying issue for analysis
 * Examine "manual" ML technique for a given signal/strategy compare to basline performance
-* Utilize OpenBB regression predictive model for multiple predictive models.
+* Utilize OpenBB regression machine learning model to predict future price with multiple models.
 * Evaluate multiple regression models for price prediction using mean absolute percent error (MAPE) & SHAP plots
 
-# Omar - sklearn new model
-* add here
-* add here
+Results:
+* Using the SHAP plot for regression models we can quickly determine the features with greatest impact on a given model.
+* Utilizing the MAPE value as metric for measurement of model quality, we can evaluate multiple model parms (train split, covariates, length of prediction...) efficiently & quantitatively for effect.
+* SHAP & MAPE findings can be used to guide future model construction.
+
+Improvements:
+* The next step in the analysis would be to examine/add multiple new features to the model and examine impact on model accuracy.
+* As this was just a regression model analysis, another step would be to examine other predictive models and or neural networks.
+* Once a model is found that achieves an acceptable accuracy/MAPE, trading strategies could be developed around model predictions.
+
+# Omar - Training models to predict TSLA stock price
+#### Using TSLA technical analysis and price data to train Sequential models with different layers, scalers, and activation functions to find the best for price prediction.
+Model_1 - two layers, StandardScaler, and exponential & sigmoid activation functions
+
+* Loss: 15596.7138671875, Accuracy: 0.0
+
+Model_2 - three layers, MinMaxScaler, and elu & tanh & relu activation functions
+
+* Loss: -3014.749755859375, Accuracy: 0.0
+
+Model_3 - ten layers, QuantileTransformer, and only using relu activation functions
+
+* Loss: 100.17599487304688, Accuracy: 0.0
+
+Findings:
+* Adding more layers, including the Dropout layers to help with overfitting, and using the same activation function seemed to reduce the loss.
+* The QuantileTransformer scaler could have contributed to better model performance for price prediction.
+* It is difficult to predict stock prices with accuracy based on technical analysis and price in isolation.
+
+Room for improvements:
+* Reducing the data to reduce outliers.
+* Experimenting with batch size and shuffle parameters when fitting the model.
+* Changing random state, test size, and shuffle when splitting the data.
+* Adding or reducing the technical analysis metrics or using different data all together to train the models.
+* Testing another model or creating a custom model.
+* Utilizing different scaler functions to transform the testing and training datasets.
 
 # Ron - theta model(?)
 * add here 
