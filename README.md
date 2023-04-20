@@ -9,10 +9,21 @@
 * add here
 
 # Mike - Machine learning with a fcous on regression for price prediction.
+Summary:
 * A case study using TSCO as underlying issue for analysis
 * Examine "manual" ML technique for a given signal/strategy compare to basline performance
-* Utilize OpenBB regression predictive model for multiple predictive models.
+* Utilize OpenBB regression machine learning model to predict future price with multiple models.
 * Evaluate multiple regression models for price prediction using mean absolute percent error (MAPE) & SHAP plots
+
+Results:
+* Using the SHAP plot for regression models we can quickly determine the features with greatest impact on a given model.
+* Utilizing the MAPE value as metric for measurement of model quality, we can evaluate multiple model parms (train split, covariates, length of prediction...) efficiently & quantitatively for effect.
+* SHAP & MAPE findings can be used to guide future model construction.
+
+Improvements:
+* The next step in the analysis would be to examine/add multiple new features to the model and examine impact on model accuracy.
+* As this was just a regression model analysis, another step would be to examine other predictive models and or neural networks.
+* Once a model is found that achieves an acceptable accuracy/MAPE, trading strategies could be developed around model predictions.
 
 # Omar - Training models to predict TSLA stock price
 #### Using TSLA technical analysis and price data to train Sequential models with different layers, scalers, and activation functions to find the best for price prediction.
